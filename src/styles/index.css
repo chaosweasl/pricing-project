@@ -1,6 +1,14 @@
 @import "tailwindcss";
-@plugin "daisyui";
 
-body {
-  overflow: hidden;
+@theme {
+  --font-montserrat: Montserrat, sans-serif;
+}
+
+@plugin "daisyui" {
+  themes: all;
+}
+
+:root {
+  font-family: var(--font-montserrat);
+  font-weight: 700;
 }
