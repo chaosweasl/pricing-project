@@ -1,3 +1,28 @@
-.body {
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: all;
+}
+
+@theme {
+  /* Default theme */
+  --font-montserrat: Montserrat, sans-serif;
+
+  /* Gradient */
+  --gradient-linear-start: hsl(236, 72%, 79%);
+  --gradient-linear-end: hsl(237, 63%, 64%);
+
+  /* Neutral colors */
+  --very-light-grayish-blue: hsl(240, 78%, 98%);
+  --light-grayish-blue: hsl(234, 14%, 74%);
+  --grayish-blue: hsl(233, 13%, 49%);
+  --dark-grayish-blue: hsl(232, 13%, 33%);
+}
+
+:root {
+  font-family: var(--font-montserrat);
+  font-weight: 700;
+}
+
+body {
   overflow: hidden;
 }
