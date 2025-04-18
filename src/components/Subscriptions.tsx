@@ -62,8 +62,8 @@ export default function Subscriptions({ enabled }: SubscriptionsProps) {
             <button
               className={`cursor-pointer w-full p-2 items-center justify-center flex rounded-lg text-xs ${
                 isPro
-                  ? "text-transparent bg-white pro-button-gradient"
-                  : "text-white bg-gradient-to-b from-[var(--gradient-linear-start)] to-[var(--gradient-linear-end)] button-gradient"
+                  ? "text-transparent bg-white hover:bg-transparent hover:text-white border-1"
+                  : "text-white bg-gradient-to-b from-[var(--gradient-linear-start)] to-[var(--gradient-linear-end)]"
               }`}
             >
               <h1
