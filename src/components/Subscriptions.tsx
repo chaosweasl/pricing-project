@@ -61,18 +61,10 @@ export default function Subscriptions({ enabled }: SubscriptionsProps) {
             ))}
             <button
               className={`cursor-pointer w-full p-2 items-center justify-center flex rounded-lg text-xs ${
-                isPro
-                  ? "text-transparent bg-white hover:bg-transparent hover:text-white border-1"
-                  : "text-white bg-gradient-to-b from-[var(--gradient-linear-start)] to-[var(--gradient-linear-end)]"
+                isPro ? "pro-button" : "non-pro-button"
               }`}
             >
-              <h1
-                className={`${
-                  isPro ? "text-gradient" : ""
-                } flex justify-center items-center`}
-              >
-                LEARN MORE
-              </h1>
+              <h1 className="flex justify-center items-center">LEARN MORE</h1>
             </button>
           </div>
         );

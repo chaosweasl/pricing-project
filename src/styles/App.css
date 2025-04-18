@@ -31,7 +31,12 @@ html {
 }
 
 /*Had to do this manually because tailwind cant */
-.text-gradient {
+.pro-button {
+  background-color: white;
+  border: 1px solid;
+}
+
+.pro-button h1 {
   background: linear-gradient(
     to bottom,
     var(--gradient-linear-start),
@@ -39,6 +44,48 @@ html {
   );
   -webkit-background-clip: text;
   background-clip: text;
+  color: transparent;
+}
+
+.pro-button:hover {
+  background: transparent;
+}
+
+.pro-button:hover h1 {
+  background: none;
+  color: white;
+}
+
+.non-pro-button {
+  background: linear-gradient(
+    to bottom,
+    var(--gradient-linear-start),
+    var(--gradient-linear-end)
+  );
+  color: white;
+}
+
+.non-pro-button:hover {
+  background: transparent;
+  border: 1px solid;
+  border-image: linear-gradient(
+      to bottom,
+      var(--gradient-linear-start),
+      var(--gradient-linear-end)
+    )
+    1;
+  border-radius: 0.5rem;
+}
+
+.non-pro-button:hover h1 {
+  background: linear-gradient(
+    to bottom,
+    var(--gradient-linear-start),
+    var(--gradient-linear-end)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 #container {
