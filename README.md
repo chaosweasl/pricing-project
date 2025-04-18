@@ -11,3 +11,5 @@ This is the tech stack that I've used in this project:
 - [HeadlessUI](https://headlessui.com)
 - [daisyUI](https://daisyui.com)
 - [TypeScript](https://www.typescriptlang.org)
+
+You can view the full project at https://chaosweasl.github.io/pricing-project/
