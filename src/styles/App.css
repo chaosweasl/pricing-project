@@ -23,6 +23,21 @@
   font-weight: 700;
 }
 
-body {
-  overflow: hidden;
+body,
+html {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/*Had to do this manually because tailwind cant */
+.text-gradient {
+  background: linear-gradient(
+    to bottom,
+    var(--gradient-linear-start),
+    var(--gradient-linear-end)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }

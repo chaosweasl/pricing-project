@@ -12,12 +12,13 @@ export default function Example({
       checked={enabled}
       onChange={setEnabled}
       className="group relative flex h-7 w-14 cursor-pointer rounded-full
-       bg-gradient-to-r from-[var(--gradient-linear-start)]
-        to-[var(--gradient-linear-end)] p-1 transition-colors
-         duration-200 ease-in-out focus:outline-none data-[focus]:outline-1
-          data-[focus]:outline-white data-[checked]:bg-gradient-to-r 
-          data-[checked]:from-[var(--gradient-linear-start)]
-           data-[checked]:to-[var(--gradient-linear-end)]"
+      bg-gradient-to-r from-[var(--gradient-linear-start)]
+      to-[var(--gradient-linear-end)] p-1 transition-opacity
+      duration-200 ease-in-out focus:outline-none data-[focus]:outline-1
+      data-[focus]:outline-white data-[checked]:bg-gradient-to-r 
+      data-[checked]:from-[var(--gradient-linear-start)]
+      data-[checked]:to-[var(--gradient-linear-end)]
+      hover:opacity-80"
     >
       <span
         aria-hidden="true"
